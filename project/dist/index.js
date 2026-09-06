@@ -5,4 +5,6 @@ function great(person) {
 }
 const username = "dhami";
 console.log(great(username));
+let x = "hello";
+x.localeCompare;
 //# sourceMappingURL=index.js.map

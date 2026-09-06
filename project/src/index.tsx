@@ -5,3 +5,8 @@ function great(person : string): string {
 
 const username: string = "dhami";
 console.log(great(username));
+
+
+let x:string = "hello"
+
+x.localeCompare
