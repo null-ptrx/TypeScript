@@ -84,5 +84,30 @@ class ekchai {
 
     constructor (public flavour:string) {}
 }
-console.log(ekchai.shopname)
+console.log(ekchai.shopname);
 
+//abstract class
+
+abstract class Drink {
+    abstract make(): void 
+}
+class Mychai extends Drink {
+    make() {
+        console.log('brewing chai')
+    }
+} 
+
+
+//composition
+
+class Heater {
+    heat(){}
+}
+
+class ChaiMaker {
+    constructor(private heater: Heater){}
+    
+    make() {
+        this.heater.heat;
+    }
+}
